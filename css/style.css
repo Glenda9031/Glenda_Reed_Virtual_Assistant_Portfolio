@@ -124,7 +124,8 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about,
-.section__subtitle--contact {
+.section__subtitle--contact,
+.section__subtitle--pricing {
   background: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -139,7 +140,7 @@ h3 {
 
 /* Header Section */
 .logo {
-  max-width: 6.25rem;
+  max-width: 7rem;
 }
 
 header {
@@ -443,6 +444,27 @@ header {
 .btn-light:hover {
   background-color: var(--clr-dark);
   color: var(--clr-light);
+}
+
+/* Start Pricing Section */
+.pricing-table {
+
+}
+
+.price-box {
+
+}
+
+.price-box__title {
+
+}
+
+.price-box__features {
+
+}
+
+.price-box__feature {
+
 }
 
 /* Start Contact Section */
