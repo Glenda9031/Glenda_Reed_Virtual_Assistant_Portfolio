@@ -29,6 +29,7 @@
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;
+    --fs-body2: 2rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
@@ -447,28 +448,41 @@ header {
 }
 
 /* Start Pricing Section */
-.price-box {
+.price-boxes {
   max-width: 75rem;
   min-height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin: 2rem 2rem;
+/*  gap: 2rem;*/
+  
+}
+
+.price-box {
+  line-height: 1;
 }
 
 .price-box__title {
+  font-size: var(--fs-body2);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  margin-bottom: .5rem;
+}
 
+.price-box__subtitle{
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
 }
 
 .price-box__features {
-
+  padding: 0;
+  margin: 0;
 }
 
 .price-box__feature {
-
-}
+  list-style: none;
+  margin-bottom: .5rem;}
 
 /* Start Contact Section */
 .boxes {
