@@ -452,15 +452,15 @@ header {
   max-width: 75rem;
   min-height: 20rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-/*  gap: 2rem;*/
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 2rem;
   
 }
 
 .price-box {
   line-height: 1;
+  margin: 0 auto;
 }
 
 .price-box__title {
