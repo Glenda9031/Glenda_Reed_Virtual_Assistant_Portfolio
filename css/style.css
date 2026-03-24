@@ -448,6 +448,12 @@ header {
 }
 
 /* Start Pricing Section */
+.section__subtitle--pricing {
+  margin-bottom: 0;
+  border-radius: .5rem;
+  color: #fff;
+}
+
 .price-boxes {
   max-width: 75rem;
   min-height: 20rem;
@@ -455,11 +461,12 @@ header {
   justify-content: flex-start;
   align-items: stretch;
   gap: 2rem;
-  
+  padding: 2rem;
 }
 
 .price-box {
-  line-height: 1;
+  line-height: 2.5;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -468,59 +475,72 @@ header {
   font-weight: var(--fw-bold);
   line-height: 1;
   margin-bottom: .5rem;
+  background: var(--clr-accent);
+  color: #fff;
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  border-radius: .5rem;
 }
 
-.price-box__subtitle{
-  font-size: var(--fs-body);
+.price-box__title span {
+  font-size: 1.3rem;
   font-weight: var(--fw-bold);
 }
 
 .price-box__features {
-  padding: 0;
-  margin: 0;
+  padding: 1rem;
+  padding-left: 1rem;
+  background: #fff;
+  color: #000;
+  border-radius: 1rem;
+}
+
+.price-box__features ul {
+  text-align: left;
+  list-style: none;
 }
 
 .price-box__feature {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
   list-style: none;
-  margin-bottom: .5rem;}
+}
 
-/* Start Contact Section */
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+.price-box__feature i {
+  margin-bottom: 0.5rem;
+  margin-right: .75rem;
+  color: var(--clr-accent);
+  font-size: 1rem;
+  list-style: none;
+}
+
+.price-box__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
   margin-top: 1rem;
-  background-color: var(--clr-light);
-}
-
-.box {
-  font-size: 2rem;
-  border: .1875rem solid var(--clr-accent);
-  padding: 1.5rem 2.5rem;
-  margin-bottom: 3rem;
-  background-color: var(--drk-gray);
-  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-}
-
-.box__title {
+  background: var(--clr-accent);
+  color: #fff;
   font-weight: var(--fw-bold);
-  font-size: var(--fs-h3);
-  color: var(--clr-light);
-  padding-right: .7rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
 }
 
-.box__title span {
-  font-weight: var(--fw-reg);
-  font-size: var(--fs-body);
-  color: var(--clr-light);
+.price-box__btn:hover {
+  background: var(--clr-light);
+  color: var(--clr-dark);
 }
 
-.box:hover {
-  transform: scale(1.2);
-  opacity: 0.75;
-  border-color: var(--clr-accent);
-  
+@media (max-width: 37.5rem) {
+  .price-boxes {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
 }
 
 /* Start Footer Section */
