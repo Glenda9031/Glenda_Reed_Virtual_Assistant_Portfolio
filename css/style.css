@@ -588,6 +588,16 @@ header {
   }
 }
 
+
+.testimonials {
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+  line-height: 1.5;
+  padding: 3em 2em;
+}
+
+
 /* Start Footer Section */
 
 .footer {
